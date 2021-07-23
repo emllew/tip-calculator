@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 body {
   font-family:'space mono', monospace;
   background-color: hsl(185, 41%, 84%);
@@ -13,6 +14,7 @@ min-height: 100vh;
   padding: 20px;
   display: flex;
   flex-direction: row;
+  gap: 20px;
   align-content: center;
   justify-content: space-between;
   max-width: 700px; 
@@ -28,7 +30,8 @@ width:350px;
 .rightGrid {
   display: flex;
   flex-direction: column;
-  width:350px;
+  width:290px;
+  padding: 15px;
   background-color: hsl(183, 100%, 15%);
   color: white;
   border-radius: 6px;
@@ -42,8 +45,8 @@ h1{
 h2 {
   width: 350px;
   font-size: 14px;
-  padding: 10px;
-  line-height: 1.1;
+
+  line-height: 1.4;
 }
 .custom{
   background-color: hsl(189, 41%, 97%);
@@ -53,9 +56,8 @@ h2 {
   border: none;
   border-radius: 5px;
   font-family: inherit;
-  width: 90px;
-  margin: 10px;
-  flex-wrap: wrap
+  max-width: 90px;
+  flex-wrap: wrap;
 }
 
 input[type="text"]#dollarSign{
@@ -127,7 +129,7 @@ color: white;
 border: none;
 border-radius: 5px;
 font-family:inherit;
-width: 310px;
+width: 270px;
 margin: 10px;
 flex-wrap: wrap;
 }
@@ -136,4 +138,12 @@ flex-wrap: wrap;
   background-color:hsl(189, 41%, 97%);
   transition: 200ms ease-in;
   cursor: pointer;
+}
+
+.attribution{
+  padding: 10px;
+  line-height:2;
+  margin: 10px;
+  color:  hsl(186, 14%, 43%);
+  font-size: 10px;
 }
