@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+body {
+  font-family:'space mono', monospace;
+  background-color: hsl(185, 41%, 84%);
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+}
+.content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  max-width: 700px; 
+  max-height: 350px;
+  margin: 0 auto;
+}
+.leftGrid {
+display: flex;
+flex-direction: row;
+flex-wrap:wrap;
+width:350px;
+}
+.rightGrid {
+  display: flex;
+  flex-direction: column;
+  width:350px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 6px;
+  justify-content: center;
+  }
+
+h1{
+  width: 350px;
+  font-size: 16px;
+}
+h2 {
+  width: 350px;
+  font-size: 14px;
+  padding: 10px;
+  line-height: 1.1;
+}
+.custom{
+  background-color: hsl(189, 41%, 97%);
+  padding: 10px;
+  margin: 5px;
+  color: grey;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  width: 90px;
+  margin: 10px;
+  flex-wrap: wrap
+}
+
+input[type="text"]#dollarSign{
+  -webkit-appearance: none!important;
+  color: grey;
+  text-align: left;
+  width: 20px;
+  border:none;
+  border-right: 0px;
+  padding: 10px;
+  margin: 0 0 0;
+  background: hsl(189, 41%, 97%);
+  border-top-left-radius:6px;
+  border-bottom-left-radius: 6px;
+}
+
+input[type="text"]#billAmount{
+  -webkit-appearance: none!important;
+  width:290px;
+  padding: 10px;
+  margin: 0 0 0 -2px;
+  border: none;
+  border-left: 0px;
+  outline: none;
+  text-align: right;
+  border-top-right-radius:6px;
+  border-bottom-right-radius: 6px;
+}
+.noOfPeople {
+  color: grey;
+  text-align: left;
+  width:350px;
+  border:none;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 0 0 0;
+  background: hsl(189, 41%, 97%);
+}
+.btn {
+  background-color: hsl(183, 100%, 15%);
+  padding: 10px;
+  margin: 5px;
+color: white;
+border: none;
+border-radius: 5px;
+font-family:inherit;
+width: 90px;
+margin: 10px;
+flex-wrap: wrap;
+}
+.btn:hover {
+  color:hsl(183, 100%, 15%);
+  background-color:hsl(189, 41%, 97%);
+  transition: 200ms ease-in;
+  cursor: pointer;
+}
+
+input[type="text"] {
+ background-color: hsl(189, 41%, 97%);
+ color:hsl(183, 100%, 15%);
+ border:none;
+}
+
+.reset {
+  background-color: hsl(183, 100%, 15%);
+  padding: 10px;
+  margin: 5px;
+color: white;
+border: none;
+border-radius: 5px;
+font-family:inherit;
+width: 310px;
+margin: 10px;
+flex-wrap: wrap;
+}
+.reset:hover {
+  color:hsl(183, 100%, 15%);
+  background-color:hsl(189, 41%, 97%);
+  transition: 200ms ease-in;
+  cursor: pointer;
+}
