@@ -15,5 +15,8 @@ function handleSubmit(event) {
 }
 
 function tipCalc(bill, percent, people) {
-  console.log(bill + ' this is from tipcalc');
+  let tip = ((bill / 100) * percent).toFixed(2);
+  console.log(
+    tip + 'this is tip' + bill + percent + people + ' this is from tipcalc'
+  );
 }

@@ -19,19 +19,19 @@
     <div class="leftGrid">
       <form>
         <h1>Bill</h1>
-        <input type="text" id="dollarSign" value="$" disabled />
+        <input type="text" id="poundSign" value="£" disabled />
         <input type="number" placeholder="0.00" required min="0" step="0.01" name="bill" id="billAmount" />
 
         <br>
         <h2>Select Tip %</h2>
 
-
-        <input type="radio" class="btn" name="percent" value="5%">
+        <label for="5">5%</label>
+        <input type="radio" class="btn" name="percent" value="5">
         </input>
-        <input type="radio" class="btn" name="percent" value="10%"></input>
-        <input type="radio" class="btn" name="percent" value="15%"></input>
-        <input type="radio" class="btn" name="percent" value="25%"></input>
-        <input type="radio" class="btn" name="percent" value="50%"></input>
+        <input type="radio" class="btn" name="percent" value="10"></input>
+        <input type="radio" class="btn" name="percent" value="15"></input>
+        <input type="radio" class="btn" name="percent" value="25"></input>
+        <input type="radio" class="btn" name="percent" value="50"></input>
         <input type="number" class="custom" name="percent" placeholder="Custom"></input>
         <br>
 
@@ -43,10 +43,14 @@
 
     <div class="rightGrid">
       <h2>Tip Amount</h2>
-      <h2>/ person</h2>
+      <h2>
+        <div class="tipPerPerson"></div>/ person
+      </h2>
 
       <h2>Total</h2>
-      <h2>/ person</h2>
+      <h2>
+        <div class="totalPerPerson"></div>/ person
+      </h2>
 
       <button class="reset">Reset</button>
     </div>

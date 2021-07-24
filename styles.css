@@ -60,11 +60,12 @@ h2 {
   flex-wrap: wrap;
 }
 
-input[type="text"]#dollarSign{
+input[type="text"]#poundSign{
   -webkit-appearance: none!important;
   color: grey;
   text-align: left;
   width: 20px;
+  font-family: inherit;
   border:none;
   border-right: 0px;
   padding: 10px;
@@ -74,11 +75,13 @@ input[type="text"]#dollarSign{
   border-bottom-left-radius: 6px;
 }
 
-input[type="text"]#billAmount{
+input[type="number"]#billAmount{
   -webkit-appearance: none!important;
+  background: hsl(189, 41%, 97%);
   width:290px;
   padding: 10px;
-  margin: 0 0 0 -2px;
+  font-family: inherit;
+  margin: 0 0 0 -20px;
   border: none;
   border-left: 0px;
   outline: none;
@@ -89,8 +92,9 @@ input[type="text"]#billAmount{
 .noOfPeople {
   color: grey;
   text-align: left;
-  width:350px;
+  width:320px;
   border:none;
+  font-family: inherit;
   border-radius: 6px;
   padding: 10px;
   margin: 0 0 0;
