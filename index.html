@@ -17,26 +17,26 @@
 
   <div class="content">
     <div class="leftGrid">
+      <form>
+        <h1>Bill</h1>
+        <input type="text" id="dollarSign" value="$" disabled />
+        <input type="number" placeholder="0.00" required min="0" step="0.01" name="bill" id="billAmount" />
 
-      <h1>Bill</h1>
-      <input type="text" id="dollarSign" value="$" disabled />
-      <input type="text" placeholder="0.00" required min="0" step="0.01" name="bill" id="billAmount" />
-
-      <br>
-      <h2>Select Tip %</h2>
+        <br>
+        <h2>Select Tip %</h2>
 
 
-      <input type="button" class="btn" name="5" value="5%">
-      </input>
-      <input type="button" class="btn" name="10" value="10%"></input>
-      <input type="button" class="btn" name="15" value="15%"></input>
-      <input type="button" class="btn" name="25" value="25%"></input>
-      <input type="button" class="btn" name="50" value="50%"></input>
-      <input type="text" class="custom" name="custom" placeholder="Custom"></input>
-      <br>
+        <input type="radio" class="btn" name="percent" value="5%">
+        </input>
+        <input type="radio" class="btn" name="percent" value="10%"></input>
+        <input type="radio" class="btn" name="percent" value="15%"></input>
+        <input type="radio" class="btn" name="percent" value="25%"></input>
+        <input type="radio" class="btn" name="percent" value="50%"></input>
+        <input type="number" class="custom" name="percent" placeholder="Custom"></input>
+        <br>
 
-      <h2>Number of People</h2> <input type="text" class="noOfPeople" name="noOfPeople"></input>
-      <input type="submit" class="submit">
+        <h2>Number of People</h2> <input type="number" class="noOfPeople" name="noOfPeople"></input>
+        <input type="submit" class="submit">
       </form>
     </div>
 
