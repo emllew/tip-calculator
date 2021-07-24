@@ -9,6 +9,7 @@ align-items: center;
 min-height: 100vh;
 }
 .content {
+  margin-top: 40px;
   background-color: white;
   border-radius: 10px;
   padding: 20px;
@@ -18,8 +19,9 @@ min-height: 100vh;
   align-content: center;
   justify-content: space-between;
   max-width: 700px; 
-  max-height: 350px;
-  margin: 0 auto;
+  height: 400px;
+
+  box-shadow: 10px 10px 20px hsl(184, 14%, 56%);
 }
 .leftGrid {
 display: flex;
@@ -60,11 +62,17 @@ h2 {
   flex-wrap: wrap;
 }
 
+input:focus {
+outline:none;
+    border:1px solid hsl(172, 67%, 45%);
+    box-shadow: 0 0 10px hsl(172, 67%, 45%);
+}
+
 input[type="text"]#poundSign{
   -webkit-appearance: none!important;
   color: grey;
   text-align: left;
-  width: 20px;
+  width: 17px;
   font-family: inherit;
   border:none;
   border-right: 0px;
@@ -81,7 +89,7 @@ input[type="number"]#billAmount{
   width:290px;
   padding: 10px;
   font-family: inherit;
-  margin: 0 0 0 -20px;
+  margin: 0 0 0 -19px;
   border: none;
   border-left: 0px;
   outline: none;
@@ -119,6 +127,17 @@ flex-wrap: wrap;
   cursor: pointer;
 }
 
+label {
+  margin: 0;
+  padding:0;
+}
+
+input[type="radio"]{
+  margin: 0;
+  padding: 0;
+  width: 20px;
+}
+
 input[type="text"] {
  background-color: hsl(189, 41%, 97%);
  color:hsl(183, 100%, 15%);
@@ -126,12 +145,15 @@ input[type="text"] {
 }
 
 .reset {
-  background-color: hsl(183, 100%, 15%);
+  background-color:hsl(184, 14%, 56%);
   padding: 10px;
+  position: relative;
+ top: 40px;
   margin: 5px;
-color: white;
+color:  hsl(172, 67%, 45%);
 border: none;
 border-radius: 5px;
+font-weight: 700;
 font-family:inherit;
 width: 270px;
 margin: 10px;
@@ -139,7 +161,7 @@ flex-wrap: wrap;
 }
 .reset:hover {
   color:hsl(183, 100%, 15%);
-  background-color:hsl(189, 41%, 97%);
+  background-color: hsl(172, 67%, 45%);
   transition: 200ms ease-in;
   cursor: pointer;
 }
@@ -150,4 +172,16 @@ flex-wrap: wrap;
   margin: 10px;
   color:  hsl(186, 14%, 43%);
   font-size: 10px;
+}
+
+h3{
+  font-size:14px;
+  line-height: 0.5;
+  padding: 0;
+  margin: 0;
+  color:hsl(184, 14%, 56%);
+}
+
+.total {
+paddings-top: 20px;
 }

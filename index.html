@@ -25,13 +25,16 @@
         <br>
         <h2>Select Tip %</h2>
 
-        <label for="5">5%</label>
-        <input type="radio" class="btn" name="percent" value="5">
-        </input>
-        <input type="radio" class="btn" name="percent" value="10"></input>
-        <input type="radio" class="btn" name="percent" value="15"></input>
-        <input type="radio" class="btn" name="percent" value="25"></input>
-        <input type="radio" class="btn" name="percent" value="50"></input>
+        <label for="5"><input type="radio" class="btn" name="percent" value="5"></input>5%</label>
+
+        <label for="5"><input type="radio" class="btn" name="percent" value="10"></input>10%</label>
+
+        <label for="5"><input type="radio" class="btn" name="percent" value="15"></input>15%</label>
+
+        <label for="5"><input type="radio" class="btn" name="percent" value="25"></input>20%</label>
+
+        <label for="5"><input type="radio" class="btn" name="percent" value="50"></input>50%</label>
+
         <input type="number" class="custom" name="percent" placeholder="Custom"></input>
         <br>
 
@@ -42,15 +45,16 @@
 
 
     <div class="rightGrid">
-      <h2>Tip Amount</h2>
-      <h2>
-        <div class="tipPerPerson"></div>/ person
-      </h2>
-
-      <h2>Total</h2>
-      <h2>
-        <div class="totalPerPerson"></div>/ person
-      </h2>
+      <h2 class="total">Tip Amount</h2>
+      <h3>
+        / person
+      </h3>
+      <div class="tipPerPerson"></div>
+      <h2 class="total">Total</h2>
+      <h3>
+        / person
+      </h3>
+      <div class="totalPerPerson"></div>
 
       <button class="reset">Reset</button>
     </div>
