@@ -60,11 +60,12 @@ h2 {
   background-color: hsl(189, 41%, 97%);
   padding: 10px;
   margin: 5px;
-  color: grey;
+   max-width: 90px;
+   color: grey;
   border: none;
   border-radius: 5px;
   font-family: inherit;
-  max-width: 90px;
+ 
   flex-wrap: wrap;
 }
 
@@ -75,9 +76,11 @@ box-shadow: 0 0 5px hsl(172, 67%, 45%);
 
 
 .radioBtns {
-  margin:10px;
   display: flex;
   flex-wrap:wrap;
+  justify-content: space-between;
+
+
 }
 
 .radioBtns input[type="radio"] {
@@ -90,8 +93,13 @@ width: 0;
     background-color:var(--right-background);
     color: white;
     font-family: inherit;
-    padding: 7px 20px;
 
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding: 10px;
+
+ min-width: 60px;
     font-size: 16px;
     border: none;
     border-radius: 4px;
@@ -111,10 +119,6 @@ width: 0;
   border:none;
   background-color:var(--buttons-cyan);
 }
-
-
-
-
 
 input[type="text"]#poundSign{
   -webkit-appearance: none!important;
@@ -224,6 +228,9 @@ flex-wrap: wrap;
   margin: 10px;
   color:  hsl(186, 14%, 43%);
   font-size: 10px;
+}
+.attribution a {
+  color:var(--totals-cyan);
 }
 
 h3{
