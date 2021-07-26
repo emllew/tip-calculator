@@ -24,9 +24,7 @@ function handleSubmit(event) {
     cantBeZero.setAttribute('class', 'CBZ');
     cantBeZero.innerText = "Can't be zero";
     numberOfPeople.appendChild(cantBeZero);
-    delete value.bill;
-    delete value.percent;
-    delete value.noOfPeople;
+    reset();
   } else {
     tipCalc(bill, percent, people);
   }
@@ -36,6 +34,7 @@ function reset(value) {
   tipPerPerson.textContent = '£0.00';
   totalPerPerson.textContent = '£0.00';
   form.reset();
+  document.
 }
 
 function tipCalc(bill, percent, people) {

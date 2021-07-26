@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+  <script src="https://kit.fontawesome.com/a754df90c4.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/styles.css" />
   <title>Tip calculator app</title>
@@ -22,8 +22,9 @@
       <form>
 
         <h2>Bill</h2>
-        <input type="text" id="poundSign" value="£" disabled />
-        <input type="number" placeholder="0.00" required min="0" step="0.01" name="bill" id="billAmount" class="bill" />
+        <i class="fas fa-pound-sign"></i>
+        <input type="number" placeholder="0.00" required min="0" step="0.01" name="bill" id="billAmount"
+          class="textBox" />
 
         <br>
 
@@ -52,7 +53,8 @@
 
 
         <h2 class="numberOfPeople">Number of People</h2>
-        <input type="number" class="noOfPeople" name="noOfPeople" placeholder="0"></input>
+        <i class="fas fa-user"></i>
+        <input type="number" class="textBox" name="noOfPeople" placeholder="0"></input>
         <input type="submit" class="submit">
       </form>
     </div>
