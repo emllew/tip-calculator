@@ -5,7 +5,9 @@
   --title-text-lighter: hsl(186, 14%, 43%);
   --buttons-cyan: hsl(185, 41%, 84%);
   --right-background: hsl(183, 100%, 15%);
-  --light-cyan:hsl(189, 41%, 97%);
+  --light-cyan: hsl(189, 41%, 97%);
+  --reset-cyan: hsl(184, 14%, 56%);
+
 }
 body {
   font-family: 'space mono', monospace;
@@ -27,13 +29,15 @@ body {
   justify-content: space-between;
   max-width: 700px;
   height: 400px;
-  box-shadow: 10px 10px 20px hsl(184, 14%, 56%);
+  box-shadow: 10px 10px 20px hsla(186, 14%, 56%, 0.623);
 }
 .leftGrid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 350px;
+  justify-content: center;
+  align-content:space-around;
 }
 .rightGrid {
   display: flex;
@@ -44,22 +48,24 @@ body {
   color: white;
   border-radius: 6px;
   justify-content: center;
+  align-content:space-around;
 }
 
 h1 {
   width: 350px;
   font-size: 16px;
-  TEXT-ALIGN: CENTER;
+  text-align: CENTER;
   padding-top: 40px;
   margin: 25px;
-  color:var(--title-text-lighter);
+  color: var(--title-text-lighter);
   letter-spacing: 3px;
 }
 h2 {
-  margin-top: 20px;
+margin: 10px;
   font-size: 14px;
-  color:var(--title-text-lighter);
+  color: var(--title-text-lighter);
 }
+
 h3 {
   font-size: 14px;
   line-height: 0.5;
@@ -69,29 +75,29 @@ h3 {
 }
 
 input:focus {
-  outline: none;
-  box-shadow: 0 0 5px hsl(172, 67%, 45%);
+  box-shadow: 0 0 2px 2px hsl(172, 67%, 45%);
+  outline:none;
 }
- #custom{
+
+#custom {
   background-color: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);
   border: none;
   width: 29%;
   justify-content: center;
-align-items:center;
-text-align: center;
-margin: 4px;
-height: 38px;
+  align-items: center;
+  text-align: center;
+  margin: 4px;
+  height: 38px;
   font-size: 16px;
   border: none;
   border-radius: 4px;
   font-family: inherit;
 }
 
-
 .CBZ {
-float:right;
-display: inline;
+  float: right;
+  display: inline;
   color: rgb(255, 102, 0);
   margin: 0;
 }
@@ -113,11 +119,11 @@ display: inline;
   font-family: inherit;
   display: flex;
   flex-basis: 30%;
-justify-content: center;
-align-items:center;
-margin: 4px;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
   flex-wrap: wrap;
-height: 40px;
+  height: 40px;
   font-size: 16px;
   border: none;
   border-radius: 4px;
@@ -126,6 +132,8 @@ height: 40px;
 .radioBtns label:hover {
   background-color: var(--totals-cyan);
   color: var(--right-background);
+  transition: 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .radioBtns input[type='radio']:checked + label {
@@ -137,12 +145,11 @@ height: 40px;
   background-color: var(--totals-cyan);
 }
 
-
 .submit {
   background-color: hsl(184, 14%, 56%);
   padding: 10px;
   justify-content: space-between;
-  color:white;
+  color: white;
   border: none;
   border-radius: 5px;
   font-weight: 700;
@@ -152,7 +159,7 @@ height: 40px;
 }
 
 .textBox {
-  color:hsl(184, 14%, 56%);
+  color: hsl(184, 14%, 56%);
   text-align: right;
   border: none;
   font-family: inherit;
@@ -163,17 +170,19 @@ height: 40px;
   font-size: bigger;
   background: hsl(189, 41%, 97%);
 }
+
 i {
   position: absolute;
   margin: 11px;
-  color:hsl(184, 14%, 56%);
+  color: hsl(184, 14%, 56%);
 }
+
 input[type='number'] {
   background-color: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);
   border: none;
-width: 100%;
-font-weight: 700;
+  width: 100%;
+  font-weight: 700;
 }
 
 input[type='text'] {
@@ -184,12 +193,11 @@ input[type='text'] {
 }
 
 .reset {
-  background-color: hsl(184, 14%, 56%);
+  background-color: var(--title-text-lighter);
   padding: 10px;
   position: relative;
   top: 40px;
-  margin: 5px;
-  color: hsl(172, 67%, 45%);
+  color: var(--reset-cyan);
   border: none;
   border-radius: 5px;
   font-weight: 700;
@@ -201,7 +209,7 @@ input[type='text'] {
 .reset:hover {
   color: hsl(183, 100%, 15%);
   background-color: hsl(172, 67%, 45%);
-  transition: 200ms ease-in;
+  transition: 200ms ease-in-out;
   cursor: pointer;
 }
 .tipPerPerson,
@@ -210,7 +218,7 @@ input[type='text'] {
   text-align: right;
   top: -48px;
   font-size: 2.2rem;
-  color:var(--totals-cyan);
+  color: var(--totals-cyan);
 }
 .attribution {
   padding: 10px;

@@ -24,17 +24,19 @@ function handleSubmit(event) {
     cantBeZero.setAttribute('class', 'CBZ');
     cantBeZero.innerText = "Can't be zero";
     numberOfPeople.appendChild(cantBeZero);
-    reset();
   } else {
+    const cantBeZero = document.querySelector('.CBZ');
+    if (document.body.contains(cantBeZero)) {
+      numberOfPeople.removeChild(cantBeZero);
+    }
     tipCalc(bill, percent, people);
   }
 }
 
-function reset(value) {
+function reset() {
   tipPerPerson.textContent = '£0.00';
   totalPerPerson.textContent = '£0.00';
   form.reset();
-  document.
 }
 
 function tipCalc(bill, percent, people) {
