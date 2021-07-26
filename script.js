@@ -1,6 +1,9 @@
 const form = document.querySelector('form');
 form.addEventListener('submit', handleSubmit);
 
+let tipPerPerson = document.querySelector('.tipPerPerson');
+let totalPerPerson = document.querySelector('.totalPerPerson');
+
 function handleSubmit(event) {
   event.preventDefault();
   const data = new FormData(event.target);
@@ -16,7 +19,8 @@ function handleSubmit(event) {
 
 function tipCalc(bill, percent, people) {
   let tip = ((bill / 100) * percent).toFixed(2);
-  console.log(
-    tip + 'this is tip' + bill + percent + people + ' this is from tipcalc'
-  );
+  let tipsEach = tip / people;
+  let totalBillEach = bill / people;
+  tipPerPerson.textContent = '£' + tip;
+  totalPerPerson.textContent = '£' + (totalBillEach + tipsEach).toFixed(2);
 }

@@ -165,7 +165,7 @@ input[type="number"]#billAmount{
 }
 .noOfPeople {
   color: grey;
-  text-align: left;
+  text-align: right;
   width:320px;
   border:none;
   font-family: inherit;
@@ -221,7 +221,12 @@ flex-wrap: wrap;
   transition: 200ms ease-in;
   cursor: pointer;
 }
-
+.tipPerPerson, .totalPerPerson {
+  position:relative;
+  text-align:right;
+  top: -48px;
+  font-size:2.2rem;
+}
 .attribution{
   padding: 10px;
   line-height:2;
