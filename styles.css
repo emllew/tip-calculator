@@ -38,6 +38,7 @@ body {
   width: 350px;
   justify-content: center;
   align-content:space-around;
+  margin-left: 15px;
 }
 .rightGrid {
   display: flex;
@@ -262,6 +263,7 @@ margin: 0 auto;
     flex-wrap: wrap;
     width: auto;
     justify-content: center;
+    margin-left: 0px;
     align-content:space-around;
   }
   .rightGrid {
