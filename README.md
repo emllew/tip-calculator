@@ -8,7 +8,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [The challenge](#the-challenge)
   - [Links](#links)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+
 - [Author](#author)
 
 
